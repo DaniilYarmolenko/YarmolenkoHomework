@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "YarmolenkoHomework"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.3"
   spec.summary      = "Framework homework for OTUS by Yarmolenko Daniil"
 
   spec.description  = <<-DESC
