@@ -32,22 +32,9 @@ public class YarmolenkoHomeworkVC: UIViewController {
         animateLabels()
     }
     func animateLabels() {
-        let angle = CGFloat.pi * 2
         self.label.rotate()
         self.label.scaleX(x: 2.0)
         self.label.scaleY(y: 2.0)
-//        UIView.animateKeyframes(withDuration: 2, delay: 0, options: [.autoreverse, .repeat]) {
-//            for i in 0..<4 {
-//                UIView.addKeyframe(withRelativeStartTime: 0.25 * Double(i),
-//                    relativeDuration: 0.25) {
-//                        let angle = CGFloat.pi / 2 * CGFloat(i + 1)
-//                    self.label.transform = CGAffineTransform(rotationAngle: angle)
-//                    let scale = 1.0 + Double(i)*0.25
-//                    self.label.transform = CGAffineTransform(scaleX: scale, y: scale)
-//                }
-//            }
-//
-//        }
          }
     func addConstraints() {
         self.label.translatesAutoresizingMaskIntoConstraints = false
