@@ -26,7 +26,7 @@ public class YarmolenkoHomeworkVC: UIViewController, HasOtusHomeworkView {
     func setUpLabel() {
         view.addSubview(label)
         label.text = "Yarmolenko"
-        label.font = .systemFont(ofSize: 64)
+        label.font = .systemFont(ofSize: 24)
         label.textColor = .white
     }
     override public func viewDidLayoutSubviews() {
