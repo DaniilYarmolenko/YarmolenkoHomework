@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "YarmolenkoHomework"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "Framework homework for OTUS by Yarmolenko Daniil"
 
   spec.description  = <<-DESC
@@ -14,7 +14,9 @@ Pod::Spec.new do |spec|
 
   spec.platform     = :ios, "13.0"
   spec.source       = { :git => "https://github.com/DaniilYarmolenko/YarmolenkoHomework.git", :tag => "#{spec.version}" }
-
+  
+  spec.dependency 'OtusHomework', :git => 'https://github.com/NikkoGladkko/OtusHomework.git'
+  
   spec.source_files  = "YarmolenkoHomework/**/*.{swift,h,m}"
 
   spec.public_header_files = "YarmolenkoHomework/**/*.{h}"

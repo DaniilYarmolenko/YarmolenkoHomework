@@ -7,10 +7,7 @@
 
 import Foundation
 import UIKit
-
-public protocol HasOtusHomeworkView: AnyObject {
-    var squareView: UIView { get }
-}
+import OtusHomework
 
 public class YarmolenkoHomeworkVC: UIViewController, HasOtusHomeworkView {
 

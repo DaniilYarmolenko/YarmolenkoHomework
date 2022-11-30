@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		26FD2F1529379456001058B1 /* YarmolenkoHomework.h in Headers */ = {isa = PBXBuildFile; fileRef = 26FD2F1429379456001058B1 /* YarmolenkoHomework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26FD2F1C29379483001058B1 /* YarmolenkoHomeworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD2F1B29379483001058B1 /* YarmolenkoHomeworkVC.swift */; };
+		4783AD5EA3D2992940FBF1AA /* Pods_YarmolenkoHomework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 310C5F42E82232C8D8170308 /* Pods_YarmolenkoHomework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26FD2F1129379456001058B1 /* YarmolenkoHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YarmolenkoHomework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26FD2F1429379456001058B1 /* YarmolenkoHomework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YarmolenkoHomework.h; sourceTree = "<group>"; };
 		26FD2F1B29379483001058B1 /* YarmolenkoHomeworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YarmolenkoHomeworkVC.swift; sourceTree = "<group>"; };
+		310C5F42E82232C8D8170308 /* Pods_YarmolenkoHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YarmolenkoHomework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		581E5BE41B6D15012D21679C /* Pods-YarmolenkoHomework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YarmolenkoHomework.release.xcconfig"; path = "Target Support Files/Pods-YarmolenkoHomework/Pods-YarmolenkoHomework.release.xcconfig"; sourceTree = "<group>"; };
+		6661E7E1ECE84969A15FA4BE /* Pods-YarmolenkoHomework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YarmolenkoHomework.debug.xcconfig"; path = "Target Support Files/Pods-YarmolenkoHomework/Pods-YarmolenkoHomework.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,17 +26,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4783AD5EA3D2992940FBF1AA /* Pods_YarmolenkoHomework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		060224CD2A895336BE83F032 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6661E7E1ECE84969A15FA4BE /* Pods-YarmolenkoHomework.debug.xcconfig */,
+				581E5BE41B6D15012D21679C /* Pods-YarmolenkoHomework.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		26FD2F0729379456001058B1 = {
 			isa = PBXGroup;
 			children = (
 				26FD2F1329379456001058B1 /* YarmolenkoHomework */,
 				26FD2F1229379456001058B1 /* Products */,
+				060224CD2A895336BE83F032 /* Pods */,
+				72AED6FC504628807F4C4D7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +70,14 @@
 			path = YarmolenkoHomework;
 			sourceTree = "<group>";
 		};
+		72AED6FC504628807F4C4D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				310C5F42E82232C8D8170308 /* Pods_YarmolenkoHomework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -71,6 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26FD2F1829379456001058B1 /* Build configuration list for PBXNativeTarget "YarmolenkoHomework" */;
 			buildPhases = (
+				024ED1242AAA138A8F7BFA48 /* [CP] Check Pods Manifest.lock */,
 				26FD2F0C29379456001058B1 /* Headers */,
 				26FD2F0D29379456001058B1 /* Sources */,
 				26FD2F0E29379456001058B1 /* Frameworks */,
@@ -127,6 +153,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		024ED1242AAA138A8F7BFA48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YarmolenkoHomework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		26FD2F0D29379456001058B1 /* Sources */ = {
@@ -262,6 +313,7 @@
 		};
 		26FD2F1929379456001058B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6661E7E1ECE84969A15FA4BE /* Pods-YarmolenkoHomework.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -274,7 +326,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,6 +348,7 @@
 		};
 		26FD2F1A29379456001058B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 581E5BE41B6D15012D21679C /* Pods-YarmolenkoHomework.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,7 +361,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
