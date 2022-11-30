@@ -8,7 +8,16 @@
 import Foundation
 import UIKit
 
-public class YarmolenkoHomeworkVC: UIViewController {
+public protocol HasOtusHomeworkView: AnyObject {
+    var squareView: UIView { get }
+}
+
+public class YarmolenkoHomeworkVC: UIViewController, HasOtusHomeworkView {
+
+    public var squareView: UIView {
+            return view
+        }
+    
     internal var label = UILabel()
     override public func viewDidLoad() {
         view.backgroundColor = .purple
