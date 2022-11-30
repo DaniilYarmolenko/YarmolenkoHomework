@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "YarmolenkoHomework"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.7"
   spec.summary      = "Framework homework for OTUS by Yarmolenko Daniil"
 
   spec.description  = <<-DESC
@@ -14,8 +14,6 @@ Pod::Spec.new do |spec|
 
   spec.platform     = :ios, "13.0"
   spec.source       = { :git => "https://github.com/DaniilYarmolenko/YarmolenkoHomework.git", :tag => "#{spec.version}" }
-  
-  spec.dependency 'SnapKit'
   
   spec.source_files  = "YarmolenkoHomework/**/*"
 

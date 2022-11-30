@@ -1,6 +1,0 @@
-framework module OtusHomework {
-  umbrella header "OtusHomework-umbrella.h"
-
-  export *
-  module * { export * }
-}
