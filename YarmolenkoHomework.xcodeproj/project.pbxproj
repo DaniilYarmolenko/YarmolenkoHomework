@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		26FD2F1529379456001058B1 /* YarmolenkoHomework.h in Headers */ = {isa = PBXBuildFile; fileRef = 26FD2F1429379456001058B1 /* YarmolenkoHomework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26FD2F1C29379483001058B1 /* YarmolenkoHomeworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD2F1B29379483001058B1 /* YarmolenkoHomeworkVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26FD2F1129379456001058B1 /* YarmolenkoHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YarmolenkoHomework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26FD2F1429379456001058B1 /* YarmolenkoHomework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YarmolenkoHomework.h; sourceTree = "<group>"; };
+		26FD2F1B29379483001058B1 /* YarmolenkoHomeworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YarmolenkoHomeworkVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				26FD2F1429379456001058B1 /* YarmolenkoHomework.h */,
+				26FD2F1B29379483001058B1 /* YarmolenkoHomeworkVC.swift */,
 			);
 			path = YarmolenkoHomework;
 			sourceTree = "<group>";
@@ -93,6 +96,7 @@
 				TargetAttributes = {
 					26FD2F1029379456001058B1 = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -129,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26FD2F1C29379483001058B1 /* YarmolenkoHomeworkVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +263,7 @@
 		26FD2F1929379456001058B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -268,6 +274,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -277,15 +284,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "otus-project.YarmolenkoHomework";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		26FD2F1A29379456001058B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -296,6 +308,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,9 +318,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "otus-project.YarmolenkoHomework";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
