@@ -7,11 +7,15 @@
 
 import Foundation
 import UIKit
+import OtusHomework
 
+public class YarmolenkoHomeworkVC: UIViewController, HasOtusHomeworkView {
+    public var squareViewController: UIViewController? {
+        return YarmolenkoHomeworkVC()
+    }
+    
 
-public class YarmolenkoHomeworkVC: UIViewController {
-
-    public var squareView: UIView {
+    public var squareView: UIView? {
             return view
         }
     
